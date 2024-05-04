@@ -1,0 +1,95 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* universal selector */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Exo 2", sans-serif;
+}  
+
+/* scroll behaviour */
+html{
+    scroll-behavior:smooth;
+}
+body{
+    background-color: hsl(219, 4%, 4%);
+    color: white;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+section{
+    padding: 4.5rem 0 2rem;
+}
+.container{
+    @apply mx-auto px-5 lg:px-10 ;
+}
+
+.home-btn{
+    position: relative;
+    border: 2px solid hsl(158, 90%, 30%);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.home-btn::before{
+    content: '';
+    position: absolute;
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    border: 2px solid hsl(158, 90%, 30%);
+    box-shadow: 0px 0px 12px hsl(158, 90%, 30%);
+    transition: 3s;
+    animation: button 2s infinite;
+}
+
+@keyframes button {
+    0%{
+        box-shadow: 0px 0px 12px hsl(158, 90%, 30%);
+    }
+    50%{
+        box-shadow: 0px 0px 24px hsl(158, 90%, 30%);
+    }
+}
+
+.slick-dotted.slick-slider {
+    padding-bottom: 30px !important;
+}
+.slick-dots li.slick-active button:before {
+    color: hsl(219 69% 56% / 1) !important;
+}
+
+.slick-dots li button::before {
+    color: white !important;
+    opacity: 1 !important;
+    font-size: 12px !important;
+}
+
+.slick-slide {
+    margin: 0 10px; /* Adjust the value as needed */
+}
+
+/* scroll bar */
+
+::-webkit-scrollbar{
+    width: .6rem;
+    background-color: hsl(219, 4%, 16%);
+    border-radius: 1rem;
+}
+::-webkit-scrollbar-thumb{
+    background-color: hsl(219, 4%, 24%);
+    border-radius: 1rem;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: hsl(219, 4%, 32%);
+    border-radius: 1rem;
+}

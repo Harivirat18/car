@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- title of the document -->
+        <title>car</title>
+        <!-- favicon -->
+        <link rel="icon" href="./src/image/favicon.png" />
+        <!-- external css link -->
+        <link rel="stylesheet" href="./dist/css/main.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+        <!-- external icon link -->
+        <link rel="stylesheet" href="./src/icons/css/font-awesome.min.css" />
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- header section start -->
+        <header class="fixed w-full z-50 bg-primary-container_color">
+            <div class="container">
+                <nav class="flex justify-between items-center py-5">
+                    <a class="flex justify-between items-center hover:text-primary-first_color" href="./index.html">
+                        <i class="ri-steering-fill text-2xl mr-1 mt-0.5"></i>
+                        Elcor
+                    </a>
+                    <div class="nav-bar">
+                        <div class="hidden lg:block">
+                            <ul class="flex gap-14 justify-between items-center capitalize">
+                                <li><a href="./index.html#home" class="text-primary-first_color">home</a></li>
+                                <li><a href="./index.html#about" class="hover:text-primary-first_color">about</a></li>
+                                <li><a href="./index.html#popular" class="hover:text-primary-first_color">popular</a></li>
+                                <li><a href="./index.html#featured" class="hover:text-primary-first_color">featured</a></li>
+                            </ul>
+                        </div>
+                        <div class="bars block lg:hidden cursor-pointer" id="bars">
+                            <i class="fa fa-bars text-2xl" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="nav-mobile hidden">
+                        <ul class="absolute top-0 left-0 right-0 bottom-0 z-30 flex flex-col gap-12 justify-center items-center h-screen uppercase bg-primary-container_color opacity-70">
+                            <li class="hover:text-primary-first_color"><a href="./index.html#home">home</a></li>
+                            <li class="hover:text-primary-first_color"><a href="./index.html#about">about</a></li>
+                            <li class="hover:text-primary-first_color"><a href="./index.html#popular">popular</a></li>
+                            <li class="hover:text-primary-first_color"><a href="./index.html#featured">featured</a></li>
+                        </ul>
+                        <i class="ri-close-line cursor-pointer absolute top-5 right-5 text-2xl z-50" id="close"></i>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!-- header section end -->
+
+        <!-- banner section start -->
+        <section id="home">
+            <div class="container pt-10">
+                <div class="text-center">
+                    <h1 class="capitalize mb-4 text-xl lg:text-3xl font-bold">choose the best car</h1>
+                    <h2 class="capitalize text-lg lg:text-2xl mb-2.5">porsche mission e</h2>
+                    <h3 class="text-primary-text_color_light"><i class="ri-flashlight-fill text-primary-first_color mr-0.5"></i>Electric car</h3>
+                </div>
+                <img src="./src/image/home.png" class="overflow-hidden my-10" alt="" />
+                <div class="flex items-center gap-10 lg:gap-20 justify-center my-10">
+                    <div class="text-center">
+                        <i class="ri-temp-hot-line mb-2.5 text-xl text-primary-text_color_light"></i>
+                        <h3 class="text-xl">24°</h3>
+                        <h4 class="text-primary-text_color_light capitalize">temperature</h4>
+                    </div>
+                    <div class="text-center">
+                        <i class="ri-speed-up-line mb-2.5 text-xl text-primary-text_color_light"></i>
+                        <h3 class="text-xl">873</h3>
+                        <h4 class="text-primary-text_color_light capitalize">mileage</h4>
+                    </div>
+                    <div class="text-center">
+                        <i class="ri-flashlight-fill mb-2.5 text-xl text-primary-text_color_light"></i>
+                        <h3 class="text-xl">94%</h3>
+                        <h4 class="text-primary-text_color_light capitalize">battery</h4>
+                    </div>
+                </div>
+                <a href="#" class="home-btn" id="about">Start</a>
+            </div>
+        </section>
+        <!-- banner section end -->
+
+        <!-- about section start -->
+        <section>
+            <div class="container">
+                <div class="grid gap-20 grid-cols-1 lg:grid-cols-2 items-center">
+                    <div class="relative">
+                        <img src="./src/image/about.png" class="rounded-2xl" alt="" />
+                        <div class="absolute right-0 -bottom-14 w-48 rounded-2xl text-center px-3 py-4" style="backdrop-filter: blur(16px);">
+                            <h3>2,500</h3>
+                            <p class="text-primary-text_color">super charges placed along popular routes</p>
+                        </div>
+                    </div>
+                    <div>
+                        <h2 class="text-2xl mb-5 text-center lg:text-left capitalize">
+                            Machines with <br />
+                            future technology
+                        </h2>
+                        <p class="text-primary-text_color_light">
+                            see the future with high performance electric car produced by renowned brands. They feature futuristic builds and designs with new and innovative platforms that last a long time
+                        </p>
+                        <a href="" class="bg-primary-first_color rounded-lg hover:bg-primary-first_color_alt px-8 py-4 inline-block mt-5">Know more</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- about section end -->
+
+        <!-- popular section start -->
+        <section id="popular">
+            <div class="container">
+                <h2 class="text-2xl text-center font-semibold mb-10 capitalize">
+                    choose your electric car <br />
+                    of the porsche brand
+                </h2>
+                <div class="single-item">
+                    <div class="p-4 group relative overflow-hidden border border-red-400 rounded-2xl">
+                        <h2 class="font-semibold text-lg mb-1.5">Porsche</h2>
+                        <h3 class="text-primary-text_color">Turbo S</h3>
+                        <img src="./src/image/popular1.png" class="my-5 ml-4 group-hover:-translate-y-5" style="transition: all 1s;" alt="" />
+                        <div class="grid grid-cols-2 my-5 text-primary-text_color">
+                            <div><i class="ri-dashboard-3-line mr-1.5"></i>3.7 Sec</div>
+                            <div><i class="ri-funds-box-line mr-1.5"></i>356 Km/h</div>
+                            <div><i class="ri-charging-pile-2-line mr-1.5"></i> Electric</div>
+                        </div>
+                        <h4>$175,900</h4>
+                        <div class="absolute bg-primary-first_color p-4 rounded- -bottom-1 right-0" style="border-radius: 20px 0 0 0;"><i class="ri-shopping-bag-2-fill"></i></div>
+                    </div>
+                    <div class="p-4 group relative overflow-hidden border border-red-400 rounded-2xl">
+                        <h2 class="font-semibold text-lg mb-1.5">Porsche</h2>
+                        <h3 class="text-primary-text_color">Turbo S</h3>
+                        <img src="./src/image/popular2.png" class="my-5 ml-4 group-hover:-translate-y-5"style="transition: all 1s;" alt="" />
+                        <div class="grid grid-cols-2 my-5 text-primary-text_color">
+                            <div><i class="ri-dashboard-3-line mr-1.5"></i>3.7 Sec</div>
+                            <div><i class="ri-funds-box-line mr-1.5"></i>356 Km/h</div>
+                            <div><i class="ri-charging-pile-2-line mr-1.5"></i> Electric</div>
+                        </div>
+                        <h4>$175,900</h4>
+                        <div class="absolute bg-primary-first_color p-4 rounded- -bottom-1 right-0" style="border-radius: 20px 0 0 0;"><i class="ri-shopping-bag-2-fill"></i></div>
+                    </div>
+                    <div class="p-4 group relative overflow-hidden border border-red-400 rounded-2xl">
+                        <h2 class="font-semibold text-lg mb-1.5">Porsche</h2>
+                        <h3 class="text-primary-text_color">Turbo S</h3>
+                        <img src="./src/image/popular3.png" class="my-5 ml-4 group-hover:-translate-y-5"style="transition: all 1s;" alt="" />
+                        <div class="grid grid-cols-2 my-5 text-primary-text_color">
+                            <div><i class="ri-dashboard-3-line mr-1.5"></i>3.7 Sec</div>
+                            <div><i class="ri-funds-box-line mr-1.5"></i>356 Km/h</div>
+                            <div><i class="ri-charging-pile-2-line mr-1.5"></i> Electric</div>
+                        </div>
+                        <h4>$175,900</h4>
+                        <div class="absolute bg-primary-first_color p-4 rounded- -bottom-1 right-0" style="border-radius: 20px 0 0 0;"><i class="ri-shopping-bag-2-fill"></i></div>
+                    </div>
+                    <div class="p-4 group relative overflow-hidden border border-red-400 rounded-2xl">
+                        <h2 class="font-semibold text-lg mb-1.5">Porsche</h2>
+                        <h3 class="text-primary-text_color">Turbo S</h3>
+                        <img src="./src/image/popular1.png" class="my-5 ml-4 group-hover:-translate-y-5"style="transition: all 1s;" alt="" />
+                        <div class="grid grid-cols-2 my-5 text-primary-text_color">
+                            <div><i class="ri-dashboard-3-line mr-1.5"></i>3.7 Sec</div>
+                            <div><i class="ri-funds-box-line mr-1.5"></i>356 Km/h</div>
+                            <div><i class="ri-charging-pile-2-line mr-1.5"></i> Electric</div>
+                        </div>
+                        <h4>$175,900</h4>
+                        <div class="absolute bg-primary-first_color p-4 rounded- -bottom-1 right-0" style="border-radius: 20px 0 0 0;"><i class="ri-shopping-bag-2-fill"></i></div>
+                    </div>
+                    <div class="p-4 group relative overflow-hidden border border-red-400 rounded-2xl">
+                        <h2 class="font-semibold text-lg mb-1.5">Porsche</h2>
+                        <h3 class="text-primary-text_color">Turbo S</h3>
+                        <img src="./src/image/popular2.png" class="my-5 ml-4 group-hover:-translate-y-5"style="transition: all 1s;" alt="" />
+                        <div class="grid grid-cols-2 my-5 text-primary-text_color">
+                            <div><i class="ri-dashboard-3-line mr-1.5"></i>3.7 Sec</div>
+                            <div><i class="ri-funds-box-line mr-1.5"></i>356 Km/h</div>
+                            <div><i class="ri-charging-pile-2-line mr-1.5"></i> Electric</div>
+                        </div>
+                        <h4>$175,900</h4>
+                        <div class="absolute bg-primary-first_color p-4 rounded- -bottom-1 right-0" style="border-radius: 20px 0 0 0;"><i class="ri-shopping-bag-2-fill"></i></div>
+                    </div>
+                    <div class="p-4 group relative overflow-hidden border border-red-400 rounded-2xl">
+                        <h2 class="font-semibold text-lg mb-1.5">Porsche</h2>
+                        <h3 class="text-primary-text_color">Turbo S</h3>
+                        <img src="./src/image/popular3.png" class="my-5 ml-4 group-hover:-translate-y-5"style="transition: all 1s;" alt="" />
+                        <div class="grid grid-cols-2 my-5 text-primary-text_color">
+                            <div><i class="ri-dashboard-3-line mr-1.5"></i>3.7 Sec</div>
+                            <div><i class="ri-funds-box-line mr-1.5"></i>356 Km/h</div>
+                            <div><i class="ri-charging-pile-2-line mr-1.5"></i> Electric</div>
+                        </div>
+                        <h4>$175,900</h4>
+                        <div class="absolute bg-primary-first_color p-4 rounded- -bottom-1 right-0" style="border-radius: 20px 0 0 0;"><i class="ri-shopping-bag-2-fill"></i></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- popular section end -->
+
+        <!-- features section start -->
+        <section id="features">
+            <h2 class="text-2xl text-center font-semibold mb-10 capitalize">more features</h2>
+            <div class="container pt-6 grid justify-center" style="grid-template-columns: 285px; background: url(./src/image/map.svg); background-size: contain; background-repeat: no-repeat; background-position: center;">
+                <div class="grid relative z-20">
+                    <img src="./src/image/features.png" class="w-40 mx-auto" alt="" />
+                    <div class="absolute top-16 left-5 w-28 rounded-2xl text-center px-3 py-4" style="backdrop-filter: blur(16px);">
+                        <h3>800v</h3>
+                        <p class="text-primary-text_color text-sm">
+                            Turbo <br />
+                            charging
+                        </p>
+                    </div>
+                    <div class="absolute right-4 top-32 w-28 rounded-2xl text-center px-3 py-4" style="backdrop-filter: blur(16px);">
+                        <h3>800v</h3>
+                        <p class="text-primary-text_color text-sm">
+                            Turbo <br />
+                            charging
+                        </p>
+                    </div>
+                    <div class="absolute left-6 bottom-8 w-28 rounded-2xl text-center px-3 py-4" style="backdrop-filter: blur(16px);">
+                        <h3>800v</h3>
+                        <p class="text-primary-text_color text-sm">
+                            Turbo <br />
+                            charging
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- features section end -->
+
+        <!-- featured section start -->
+        <section id="featured">
+            <div class="container capitalize">
+                <h2 class="text-2xl text-center font-semibold mb-10 capitalize">featured luxury cars</h2>
+                <ul class="flex justify-center items-center gap-5 mb-10">
+                    <li class="w-12 h-12 flex justify-center items-center text-sm p-3 rounded-lg text-white bg-primary-first_color cursor-pointer" id="btn1">All</li>
+                    <li class="w-12 h-12 flex justify-center items-center bg-primary-container_color p-3 rounded-lg text-white hover:bg-primary-first_color cursor-pointer" id="btn2"><img src="./src/image/logo3.png" alt="" /></li>
+                    <li class="w-12 h-12 flex justify-center items-center bg-primary-container_color p-3 rounded-lg text-white hover:bg-primary-first_color cursor-pointer" id="btn3"><img src="./src/image/logo2.png" alt="" /></li>
+                    <li class="w-12 h-12 flex justify-center items-center bg-primary-container_color p-3 rounded-lg text-white hover:bg-primary-first_color cursor-pointer" id="btn4"><img src="./src/image/logo1.png" alt="" /></li>
+                </ul>
+                <div id="all">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center gap-10 py-10">
+                        <div class="p-4 group relative overflow-hidden border border-red-400 rounded-2xl">
+                            <h2 class="font-semibold text-lg mb-1.5">Porsche</h2>
+                            <h3 class="text-primary-text_color">Turbo S</h3>
+                            <img src="./src/image/popular1.png"style="transition: all 1s;" class="my-5 ml-4 group-hover:-translate-x-5" alt="" />
+                            <h4>$175,900</h4>
+                            <div class="absolute bg-primary-first_color p-4 rounded- -bottom-1 right-0" style="border-radius: 20px 0 0 0;"><i class="ri-shopping-bag-2-fill"></i></div>
+                        </div>
+                        <div class="p-4 group relative overflow-hidden border border-red-400 rounded-2xl">
+                            <h2 class="font-semibold text-lg mb-1.5">Tesla</h2>
+                            <h3 class="text-primary-text_color">Turbo S</h3>
+                            <img src="./src/image/popular2.png"style="transition: all 1s;" class="my-5 ml-4 group-hover:-translate-x-5" alt="" />
+                            <h4>$175,900</h4>
+                            <div class="absolute bg-primary-first_color p-4 rounded- -bottom-1 right-0" style="border-radius: 20px 0 0 0;"><i class="ri-shopping-bag-2-fill"></i></div>
+                        </div>
+                        <div class="p-4 group relative overflow-hidden border border-red-400 rounded-2xl">
+                            <h2 class="font-semibold text-lg mb-1.5">Ferrari</h2>
+                            <h3 class="text-primary-text_color">Turbo S</h3>
+                            <img src="./src/image/popular3.png"style="transition: all 1s;" class="my-5 ml-4 group-hover:-translate-x-5" alt="" />
+                            <h4>$175,900</h4>
+                            <div class="absolute bg-primary-first_color p-4 rounded- -bottom-1 right-0" style="border-radius: 20px 0 0 0;"><i class="ri-shopping-bag-2-fill"></i></div>
+                        </div>
+                        <div class="p-4 group relative overflow-hidden border border-red-400 rounded-2xl">
+                            <h2 class="font-semibold text-lg mb-1.5">Audi</h2>
+                            <h3 class="text-primary-text_color">Turbo S</h3>
+                            <img src="./src/image/popular2.png"style="transition: all 1s;" class="my-5 ml-4 group-hover:-translate-x-5" alt="" />
+                            <h4>$175,900</h4>
+                            <div class="absolute bg-primary-first_color p-4 rounded- -bottom-1 right-0" style="border-radius: 20px 0 0 0;"><i class="ri-shopping-bag-2-fill"></i></div>
+                        </div>
+                        <div class="p-4 group relative overflow-hidden border border-red-400 rounded-2xl">
+                            <h2 class="font-semibold text-lg mb-1.5">Porsche</h2>
+                            <h3 class="text-primary-text_color">Turbo S</h3>
+                            <img src="./src/image/popular1.png"style="transition: all 1s;" class="my-5 ml-4 group-hover:-translate-x-5" alt="" />
+                            <h4>$175,900</h4>
+                            <div class="absolute bg-primary-first_color p-4 rounded- -bottom-1 right-0" style="border-radius: 20px 0 0 0;"><i class="ri-shopping-bag-2-fill"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="tesla" class="hidden">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center gap-10 py-10">
+                        <div class="p-4 group relative overflow-hidden border border-red-400 rounded-2xl">
+                            <h2 class="font-semibold text-lg mb-1.5">tesla</h2>
+                            <h3 class="text-primary-text_color">Turbo S</h3>
+                            <img src="./src/image/popular1.png"style="transition: all 1s;" class="my-5 ml-4 group-hover:-translate-x-5" alt="" />
+                            <h4>$175,900</h4>
+                            <div class="absolute bg-primary-first_color p-4 rounded- -bottom-1 right-0" style="border-radius: 20px 0 0 0;"><i class="ri-shopping-bag-2-fill"></i></div>
+                        </div>
+                        <div class="p-4 group relative overflow-hidden border border-red-400 rounded-2xl">
+                            <h2 class="font-semibold text-lg mb-1.5">tesla</h2>
+                            <h3 class="text-primary-text_color">Turbo S</h3>
+                            <img src="./src/image/popular2.png"style="transition: all 1s;" class="my-5 ml-4 group-hover:-translate-x-5" alt="" />
+                            <h4>$175,900</h4>
+                            <div class="absolute bg-primary-first_color p-4 rounded- -bottom-1 right-0" style="border-radius: 20px 0 0 0;"><i class="ri-shopping-bag-2-fill"></i></div>
+                        </div>
+                        <div class="p-4 group relative overflow-hidden border border-red-400 rounded-2xl">
+                            <h2 class="font-semibold text-lg mb-1.5">tesla</h2>
+                            <h3 class="text-primary-text_color">Turbo S</h3>
+                            <img src="./src/image/popular3.png"style="transition: all 1s;" class="my-5 ml-4 group-hover:-translate-x-5" alt="" />
+                            <h4>$175,900</h4>
+                            <div class="absolute bg-primary-first_color p-4 rounded- -bottom-1 right-0" style="border-radius: 20px 0 0 0;"><i class="ri-shopping-bag-2-fill"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="audi" class="hidden">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center gap-10 py-10">
+                        <div class="p-4 group relative overflow-hidden border border-red-400 rounded-2xl">
+                            <h2 class="font-semibold text-lg mb-1.5">audi</h2>
+                            <h3 class="text-primary-text_color">Turbo S</h3>
+                            <img src="./src/image/popular1.png"style="transition: all 1s;" class="my-5 ml-4 group-hover:-translate-x-5" alt="" />
+                            <h4>$175,900</h4>
+                            <div class="absolute bg-primary-first_color p-4 rounded- -bottom-1 right-0" style="border-radius: 20px 0 0 0;"><i class="ri-shopping-bag-2-fill"></i></div>
+                        </div>
+                        <div class="p-4 group relative overflow-hidden border border-red-400 rounded-2xl">
+                            <h2 class="font-semibold text-lg mb-1.5">audi</h2>
+                            <h3 class="text-primary-text_color">Turbo S</h3>
+                            <img src="./src/image/popular2.png"style="transition: all 1s;" class="my-5 ml-4 group-hover:-translate-x-5" alt="" />
+                            <h4>$175,900</h4>
+                            <div class="absolute bg-primary-first_color p-4 rounded- -bottom-1 right-0" style="border-radius: 20px 0 0 0;"><i class="ri-shopping-bag-2-fill"></i></div>
+                        </div>
+                        <div class="p-4 group relative overflow-hidden border border-red-400 rounded-2xl">
+                            <h2 class="font-semibold text-lg mb-1.5">audi</h2>
+                            <h3 class="text-primary-text_color">Turbo S</h3>
+                            <img src="./src/image/popular3.png"style="transition: all 1s;" class="my-5 ml-4 group-hover:-translate-x-5" alt="" />
+                            <h4>$175,900</h4>
+                            <div class="absolute bg-primary-first_color p-4 rounded- -bottom-1 right-0" style="border-radius: 20px 0 0 0;"><i class="ri-shopping-bag-2-fill"></i></div>
+                        </div>
+                        <div class="p-4 group relative overflow-hidden border border-red-400 rounded-2xl">
+                            <h2 class="font-semibold text-lg mb-1.5">audi</h2>
+                            <h3 class="text-primary-text_color">Turbo S</h3>
+                            <img src="./src/image/popular3.png"style="transition: all 1s;" class="my-5 ml-4 group-hover:-translate-x-5" alt="" />
+                            <h4>$175,900</h4>
+                            <div class="absolute bg-primary-first_color p-4 rounded- -bottom-1 right-0" style="border-radius: 20px 0 0 0;"><i class="ri-shopping-bag-2-fill"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="ferrari" class="hidden">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center gap-10 py-10">
+                        <div class="p-4 group relative overflow-hidden border border-red-400 rounded-2xl">
+                            <h2 class="font-semibold text-lg mb-1.5">ferrari</h2>
+                            <h3 class="text-primary-text_color">Turbo S</h3>
+                            <img src="./src/image/popular1.png"style="transition: all 1s;" class="my-5 ml-4 group-hover:-translate-x-5" alt="" />
+                            <h4>$175,900</h4>
+                            <div class="absolute bg-primary-first_color p-4 rounded- -bottom-1 right-0" style="border-radius: 20px 0 0 0;"><i class="ri-shopping-bag-2-fill"></i></div>
+                        </div>
+                        <div class="p-4 group relative overflow-hidden border border-red-400 rounded-2xl">
+                            <h2 class="font-semibold text-lg mb-1.5">ferrari</h2>
+                            <h3 class="text-primary-text_color">Turbo S</h3>
+                            <img src="./src/image/popular2.png"style="transition: all 1s;" class="my-5 ml-4 group-hover:-translate-x-5" alt="" />
+                            <h4>$175,900</h4>
+                            <div class="absolute bg-primary-first_color p-4 rounded- -bottom-1 right-0" style="border-radius: 20px 0 0 0;"><i class="ri-shopping-bag-2-fill"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- featured section end -->
+
+        <!-- offer section start -->
+        <section class="offer" style="background: url(./src/image/offer-bg.png); background-position: center;">
+            <div class="container">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+                    <div class="md:w-full w-80">
+                        <h2 class="text-2xl mb-5 capitalize font-semibold">
+                            Do you want to receive special offers?
+                        </h2>
+                        <p class="text-primary-text_color_light mb-5">
+                            see the future with high performance electric car produced by renowned brands. They feature futuristic builds
+                        </p>
+                        <a href="" class="bg-primary-first_color rounded-lg hover:bg-primary-first_color_alt px-8 py-4 inline-block mt-5">Subscribe Now</a>
+                    </div>
+                    <div>
+                        <img src="./src/image/offer.png" alt="" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- offer section end -->
+
+        <!-- logo section start -->
+        <section class="logo">
+            <div class="container">
+                <div class="grid grid-cols-3 lg:grid-cols-6 gap-16 justify-items-center items-center mb-5">
+                    <div>
+                        <img src="./src/image/logo1.png" class="w-10 opacity-40 hover:opacity-100" alt="" />
+                    </div>
+                    <div>
+                        <img src="./src/image/logo2.png" class="w-10 opacity-40 hover:opacity-100" alt="" />
+                    </div>
+                    <div>
+                        <img src="./src/image/logo3.png" class="w-10 opacity-40 hover:opacity-100" alt="" />
+                    </div>
+                    <div>
+                        <img src="./src/image/logo4.png" class="w-10 opacity-40 hover:opacity-100" alt="" />
+                    </div>
+                    <div>
+                        <img src="./src/image/logo5.png" class="w-10 opacity-40 hover:opacity-100" alt="" />
+                    </div>
+                    <div>
+                        <img src="./src/image/logo6.png" class="w-10 opacity-40 hover:opacity-100" alt="" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- logo section end -->
+
+        <!-- footer section start -->
+        <footer>
+            <div class="container py-10">
+                <div class="grid gap-10 grid-cols-1 lg:grid-cols-4 justify-items-start lg:justify-items-center">
+                    <div class="list1">
+                        <a class="inline-flex items-center hover:text-primary-first_color" href="./index.html">
+                            <i class="ri-steering-fill text-2xl mr-1 mt-0.5"></i>
+                            Elcor
+                        </a>
+                        <p class="mt-5 text-primary-text_color_light">We offer the best electric cars of the most recognized brands in the world</p>
+                    </div>
+                    <div class="list2">
+                        <h3 class="mb-5 font-semibold text-lg">Company</h3>
+                        <ul class="text-primary-text_color_light">
+                            <li class="py-1 cursor-pointer hover:text-white">About</li>
+                            <li class="py-1 cursor-pointer hover:text-white">Cars</li>
+                            <li class="py-1 cursor-pointer hover:text-white">History</li>
+                            <li class="py-1 cursor-pointer hover:text-white">Shop</li>
+                        </ul>
+                    </div>
+                    <div class="list3">
+                        <h3 class="mb-5 font-semibold text-lg">Information</h3>
+                        <ul class="text-primary-text_color_light">
+                            <li class="py-1 cursor-pointer hover:text-white">Request a quote</li>
+                            <li class="py-1 cursor-pointer hover:text-white">Find a dealer</li>
+                            <li class="py-1 cursor-pointer hover:text-white">Contact us</li>
+                            <li class="py-1 cursor-pointer hover:text-white">Services</li>
+                        </ul>
+                    </div>
+                    <div class="list4">
+                        <h3 class="mb-5 font-semibold text-lg">Follow us</h3>
+                        <div class="flex gap-6">
+                            <i class="fa fa-facebook text-primary-text_color_light hover:text-white cursor-pointer" style="font-size: 20px;" aria-hidden="true"></i>
+                            <i class="fa fa-linkedin text-primary-text_color_light hover:text-white cursor-pointer" style="font-size: 20px;" aria-hidden="true"></i>
+                            <i class="fa fa-twitter text-primary-text_color_light hover:text-white cursor-pointer" style="font-size: 20px;" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer section end -->
+
+        <!-- copyrights start -->
+        <div class="copy py-5 text-center text-white bg-primary-container_color">
+            <p class="text-sm">Copyright © 2024 All rights: <span class="text-primary-first_color font-bold">Harivirat18</span></p>
+        </div>
+        <!-- copyrights end -->
+
+        <!-- external js link -->
+        <script src="./src/js/scrollreveal.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+        <script src="./src/js/main.js"></script>
+    </body>
+</html>
